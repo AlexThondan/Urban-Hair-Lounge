@@ -78,20 +78,24 @@ main {
 .landing-text h1 {
     margin-bottom: 20px;
 }
-
-.button {
-    padding: 15px 20px; 
-    margin-top: 20px; 
-    background-color: #ff7f50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    font-weight: bold; 
+.h1-get-in{
+    margin-top: 130px;
 }
-
+#flex-container {
+    display: flex;  
+    justify-content: space-evenly; 
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex-item-left{
+    margin-top: 100px;
+}
+.contact{
+    height: 830px;
+}
 .site-title h1 {
-    font-size: 3em; /* Increase font size of the title */
+    font-size: 3em; 
 }
 
 
@@ -102,7 +106,7 @@ main {
 .opening-hours {
     text-align: center;
     margin-top: 10px;
-    color: white; /* Adjust text color */
+    color: white;
 }
 
 .opening-hours p {
