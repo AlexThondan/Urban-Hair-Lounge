@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    padding: 15px 0;
+    padding: 10px;
     box-shadow: none;
 }
 
@@ -17,21 +17,20 @@ header {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 nav ul {
     display: flex;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 10px;
+    margin: 10px;
 }
 
 nav ul li {
-    margin-right: 15px;
-    width: 110px; ;
+    margin-right: 50px;
+    width: 90px;
 }
 
 nav ul li a {
-    text-decoration: none;
+    text-decoration:none;
     color: #333;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -69,6 +68,7 @@ main {
 .landing-text {
     text-align: center;
     color: white;
+    margin-top: 1200x; /* Adjust this value to increase or decrease the space */
 }
 
 .landing-text h3 {
@@ -78,9 +78,11 @@ main {
 .landing-text h1 {
     margin-bottom: 20px;
 }
-.h1-get-in{
-    margin-top: 130px;
+
+.h1-get-in {
+    margin-top: 200px;
 }
+
 #flex-container {
     display: flex;  
     justify-content: space-evenly; 
@@ -241,6 +243,7 @@ nav ul li a:hover {
     display: block;
     margin-top: 20px;
 }
+{
 .haircut-section {
     text-align: center;
     padding: 300px;
@@ -248,6 +251,7 @@ nav ul li a:hover {
     margin: 0 auto;
     margin-bottom: 30px;
 }
+
 
 
 .haircut-item {
@@ -318,4 +322,52 @@ nav ul li a:hover {
 .close:focus {
     color: #000;
 }
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+}
 
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #ff7f50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff6347;
+}
