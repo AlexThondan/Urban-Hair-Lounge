@@ -7,6 +7,7 @@ body {
 header {
     padding: 0px;
     box-shadow: none;
+    margin-right: 146px;
 }
 
 .container-nav {
@@ -384,3 +385,69 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #ff6347;
 }
+
+#gallery-header {
+    text-align: center;
+    padding: 32px;
+  }
+  .gallery-header h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: #1e56a0;
+  }
+  @media (max-width: 600px) {
+    .gallery-header h1 {
+      font-size: x-large;
+    }
+  }
+  .gallery-header p {
+    font-weight: 600;
+    color: #181b2c;
+  }
+  .gallery-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 14px;
+  }
+  
+  .Gal2 {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 6px;
+  }
+  
+  .Gal2 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  @media (max-width: 800px) {
+    .Gal2 {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .Gal2 {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 1
+    }
+}
+.Gal2 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform .2s ease-in-out;
+  }
+  
+  .Gal2 img:hover {
+    transform: scale(1.05);
+  }
