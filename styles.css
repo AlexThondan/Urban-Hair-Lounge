@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Segoe Script", cursive;
     background-color: #f7f7f7;
     color: #333;
 }
@@ -8,6 +8,7 @@ header {
     padding: 0px;
     box-shadow: none;
     margin-right: 146px;
+    margin-top: 36px;
 }
 
 .container-nav {
@@ -40,7 +41,13 @@ nav ul li a {
 nav ul li a:hover {
     color: #ff7f50;
 }
-
+.main-heading {
+    color: #ffffff; 
+    font-size: 5em;
+    font-family: "Segoe Script", cursive;
+    text-align: center;
+    margin-top: 50px; 
+}
 main {
     text-align: center;
     padding: 50px;
@@ -52,15 +59,15 @@ main {
 }
 
 .site-title h1 {
-    margin-top: -40px; /* Adjust this value as needed */
+    margin-top: -40px; 
 }
 
 .site-title .subtitle {
-    margin-top: 5px; /* Adjust this value as needed */
+    margin-top: 5px; 
 }
 
 #home {
-    background: url('img/adam-winger-KVVjmb3IIL8-unsplash.jpg') no-repeat center center fixed;
+    background: url('img/Main finalized.png') no-repeat center center fixed;
     height: 100vh;
     position: relative;
     width: 100%;
@@ -82,15 +89,16 @@ main {
 .landing-text {
     text-align: center;
     color: white;
-    margin-top: 1200x; /* Adjust this value to increase or decrease the space */
+    margin-top: 1200x; 
 }
 
 .landing-text h3 {
     margin-bottom: 10px;
+    font-size: 2em;
 }
 
 .landing-text h1 {
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 .h1-get-in {
@@ -123,6 +131,7 @@ main {
     text-align: center;
     margin-top: 10px;
     color: white;
+    font-size: 1.5em;
 }
 
 .opening-hours p {
@@ -141,7 +150,7 @@ main {
 }
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: "Segoe Script", cursive; 
     background-color: #f7f7f7;
     color: #333;
 }
@@ -180,60 +189,71 @@ nav ul li a:hover {
     color: #ff7f50;
 }
 
-.team {
+.team-header {
     text-align: center;
-    padding: 50px;
-}
-
-.team-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.team-header h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.team-caption {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
-.row {
-    margin-top: 40px;
+    padding: 32px;
+  }
+  .team-header h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: #1e56a0;
+  }
+  @media (max-width: 600px) {
+    .team h1 {
+      font-size: x-large;
+    }
+  }
+  .team p {
+    font-weight: 600;
+    color: #181b2c;
+  }
+  .team .row {
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-}
-
-.column {
-    flex: 0 0 calc(33.33% - 20px);
-    margin: 10px;
+    padding: 0 14px;
+  }
+  
+  .team .column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 6px;
+  }
+  .team .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 200%;
+  }
+  .team .column h3 {
+    font-weight: 600;
+    font-family: "Lora", sans-serif;
+    color: #181b2c;
     text-align: center;
-    
-}
-
-.column img {
-    width: 80%;
-    max-width: 150px;
-    border-radius: 80px;
-}
-
-.team-member {
-    margin-top: 10px;
-}
-
-.team-member h3 {
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-.team-member p {
-    margin: 0;
-    font-size: 0.9em;
-}
-
+    margin-bottom: 3px;
+  }
+  .team .column p {
+    font-weight: 400;
+    color: #181b2c;
+    text-align: center;
+  }
+  @media (max-width: 800px) {
+    .team .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  @media (max-width: 600px) {
+    .team .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
 .about-header h1 {
     font-size: 2.5em;
     color: #000; 
