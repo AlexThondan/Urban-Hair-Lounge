@@ -208,7 +208,7 @@ nav ul li a:hover {
     font-weight: 600;
     color: #181b2c;
   }
-  .team .row {
+  .row {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -216,17 +216,18 @@ nav ul li a:hover {
     padding: 0 14px;
   }
   
-  .team .column {
+  .column {
     -ms-flex: 25%;
     flex: 25%;
     max-width: 25%;
     padding: 0 6px;
   }
-  .team .column img {
+   
+  .column img {
     margin-top: 8px;
     vertical-align: middle;
-    width: 100%;
-    border-radius: 200%;
+    width: 270px;
+    border-radius: 50%;
   }
   .team .column h3 {
     font-weight: 600;
@@ -235,7 +236,7 @@ nav ul li a:hover {
     text-align: center;
     margin-bottom: 3px;
   }
-  .team .column p {
+  .column p {
     font-weight: 400;
     color: #181b2c;
     text-align: center;
