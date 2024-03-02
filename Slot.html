@@ -38,9 +38,12 @@
             </ul>
         </div>
     </div>
-
     <div class="popup" id="bookingPopup">
-        <p>Congratulations! Your slot has been successfully booked. <br>Get ready for an amazing experience.</br> Be punctual, and we'll be there to assist you.</p>
+        <!-- Insert the image tag below with the appropriate source (src) attribute -->
+        <img src="Apps/Tick Mark.jpg" alt="Congratulations Image" >
+        
+        <p>Congratulations!<br></br> Your slot has been successfully booked. <br>Get ready for an amazing experience.</br> Be punctual, and we'll be there to assist you.</p>
+        
         <div id="detailsContainer">
             <p><strong>Name:</strong> <span id="popupName"></span></p>
             <p><strong>Email:</strong> <span id="popupEmail"></span></p>
@@ -50,34 +53,34 @@
         </div>
         <button onclick="closePopup()">Got it!</button>
     </div>
-
+    
     <div class="overlay" id="overlay"></div>
-
+    
     <script>
         document.getElementById("bookingForm").addEventListener("submit", function (event) {
-            event.preventDefault(); 
-            showPopup(); 
+            event.preventDefault();
+            showPopup();
             displayFormDetails();
         });
-
+    
         function showPopup() {
             document.getElementById("bookingPopup").style.display = "block";
             document.getElementById("overlay").style.display = "block";
         }
-
+    
         function closePopup() {
             document.getElementById("bookingPopup").style.display = "none";
             document.getElementById("overlay").style.display = "none";
-            window.location.href = "index.html"; 
+            window.location.href = "index.html";
         }
-
+    
         function displayFormDetails() {
             var name = document.getElementById("name").value;
             var email = document.getElementById("email").value;
             var phone = document.getElementById("phone").value;
             var date = document.getElementById("date").value;
             var time = document.getElementById("time").value;
-
+    
             document.getElementById("popupName").innerText = name;
             document.getElementById("popupEmail").innerText = email;
             document.getElementById("popupDate").innerText = date;
@@ -85,5 +88,7 @@
             document.getElementById("popupphone").innerText = phone;
         }
     </script>
+    
+    <a href="Index.html" class="back-button">&#8592;</a>
 </body>
 </html>

@@ -78,3 +78,18 @@ p a {
 p a:hover {
   text-decoration: underline;
 }
+.back-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-weight: bold;
+  font-size: 30px; 
+  color: #000000; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  color: #423f3f; 
+  text-decoration: underline;
+}

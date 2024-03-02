@@ -82,3 +82,19 @@ p a:hover {
     color: #ffffff;
 }
 }
+.back-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-weight: bold;
+    font-size: 30px; 
+    color: #ffffff; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    color: #e2dcdc; 
+    text-decoration: underline;
+  }
+  

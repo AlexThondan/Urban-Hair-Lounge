@@ -143,6 +143,7 @@ main {
 }
 .flex-item-left{
     margin-top: 0px;
+    font-size: 1.2em;
 }
 .contact{
     height: 830px;
@@ -307,6 +308,7 @@ nav ul li a:hover {
 .about-content {
     max-width: 900px;
     margin: 0 auto;
+    font-size: 1.2em;
 }
 
 .video
