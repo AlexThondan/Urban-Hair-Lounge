@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: "Segoe Script", cursive;
+    font-family: "Baskerville Old Face", serif;
     background-color: #f7f7f7;
     color: #333;
 }
@@ -44,9 +44,16 @@ nav ul li a:hover {
 .main-heading {
     color: #ffffff; 
     font-size: 4em;
-    font-family: "Segoe Script", cursive;
+    font-family: "Baskerville Old Face", serif;
     text-align: center;
     margin-top: 50px; 
+}
+.main-heading {
+    font-family: 'Segoe Script', cursive;
+}
+
+h3 {
+    font-family: 'Segoe Script', cursive;
 }
 main {
     text-align: center;
@@ -123,6 +130,9 @@ main {
     background-color: #fff;
     color: #000;
 }
+.h1-get-in {
+    font-family: 'Segoe Script', cursive;
+}
 
 #flex-container {
     display: flex;  
@@ -169,7 +179,7 @@ main {
 }
 body {
     margin: 0;
-    font-family: "Segoe Script", cursive; 
+    font-family: "Baskerville Old Face", serif;
     background-color: #f7f7f7;
     color: #333;
 }
@@ -227,6 +237,12 @@ nav ul li a:hover {
     font-weight: 600;
     color: #181b2c;
   }
+  .team-container h1 {
+    font-family: 'Segoe Script', cursive;
+}
+.team-caption {
+    font-family: 'Segoe Script', cursive;
+}
   .row {
     display: -ms-flexbox;
     display: flex;
@@ -239,8 +255,8 @@ nav ul li a:hover {
   .column {
     -ms-flex: 25%;
     flex: 25%;
-    max-width: 25%;
-    padding: 0px 44px;
+    max-width: 30%;
+    padding: 43px 50px;
   }
    
   .column img {
@@ -283,8 +299,9 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.about-header {
+#about-header {
     text-align: center;
+    font-family: 'Segoe Script', cursive;
 }
 
 .about-content {
@@ -300,14 +317,16 @@ nav ul li a:hover {
     margin-top: 100px;
 }
 
-.haircut-section {
+#haircut-section {
     text-align: center;
-    padding: 300px;
+    padding: 130px;
     max-width: 1200px; 
     margin: 0 auto;
     margin-bottom: 30px;
 }
-
+#haircut-section h1 {
+    font-family: 'Segoe Script', cursive;
+}
 
 
 .haircut-item {
@@ -431,13 +450,10 @@ button[type="submit"]:hover {
 #gallery-header {
     text-align: center;
     padding: 32px;
-  }
-  .gallery-header h1 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 3.2rem;
-    color: #1e56a0;
-  }
+}
+#gallery-header h1 {
+    font-family: 'Segoe Script', cursive;
+}
   @media (max-width: 600px) {
     .gallery-header h1 {
       font-size: x-large;

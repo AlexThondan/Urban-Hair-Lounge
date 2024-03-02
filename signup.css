@@ -1,5 +1,5 @@
 body {
-  font-family: "Segoe Script", cursive;
+  font-family: "Baskerville Old Face", serif;
   background-image: url('img/barber-6818707.jpg'); 
   background-size: cover;
   background-position: center;
@@ -16,13 +16,13 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
-
 .signup-container h2 {
   text-align: center;
   margin-bottom: 30px;
   font-size: 36px; 
   color: #fff; 
   font-weight: bold; 
+  font-family: "Segoe Script", cursive;
 }
 
 .input-group {
@@ -46,7 +46,7 @@ body {
 }
 
 button {
-  font-family: "Segoe Script", cursive;
+  font-family: "Baskerville Old Face", serif;
   width: 106%;
   padding: 12px;
   border: none;
