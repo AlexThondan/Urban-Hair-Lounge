@@ -5,9 +5,9 @@ body {
     color: #333;
 }
 header {
+    margin-left: 50px;
     padding: 0px;
     box-shadow: none;
-    margin-right: 146px;
     margin-top: 36px;
 }
 
@@ -15,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100px;
+    max-width: 100%;
     margin: 100px auto;
 }
 
@@ -28,7 +28,7 @@ nav ul {
 
 nav ul li {
     margin-right: 100px;
-    width: 200px;
+    width: 175px;
 }
 
 nav ul li a {
@@ -43,7 +43,7 @@ nav ul li a:hover {
 }
 .main-heading {
     color: #ffffff; 
-    font-size: 5em;
+    font-size: 4em;
     font-family: "Segoe Script", cursive;
     text-align: center;
     margin-top: 50px; 
@@ -132,7 +132,7 @@ main {
     margin: 0 auto;
 }
 .flex-item-left{
-    margin-top: 100px;
+    margin-top: 0px;
 }
 .contact{
     height: 830px;

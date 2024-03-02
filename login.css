@@ -46,12 +46,12 @@ body {
 }
 
 button {
-    width: 100%;
+    width: 106%;
     padding: 12px;
     border: none;
     background-color: #007bff;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     font-size: 20px; 
     transition: background-color 0.3s ease;
