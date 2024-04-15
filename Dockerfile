@@ -1,9 +1,6 @@
 # Use the official Node.js 16 image as a parent image
 FROM node:16-alpine
 
-# Set the working directory
-WORKDIR /usr/src/app
-
 # Copy package.json and package-lock.json (if available)
 COPY package.json package-lock.json* ./
 

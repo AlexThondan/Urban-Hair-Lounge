@@ -52,7 +52,7 @@ app.get('/', (req, res) => {
 
 // Serve the booking page
 app.get('/index', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/index.html'));
+    res.sendFile(path.join(__dirname, '/views/Index.html'));
 });
 
 
@@ -63,7 +63,7 @@ app.get('/signup', (req, res) => {
 
 
 app.get('/slot', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/slot.html'));
+    res.sendFile(path.join(__dirname, '/views/Slot.html'));
 });
 
 
