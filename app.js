@@ -9,7 +9,7 @@ const app = express();
 
 // Configure database connection
 const db = mysql.createConnection({
-    host: '127.0.0.1',
+    host: 'host.docker.internal',
     user: 'root',
     password: '',
     database: 'urbanhair'
@@ -44,7 +44,7 @@ const signupRoute = require('./route/signup')(db);
 app.use('/user/signup', signupRoute);
 
 // Serve the login page
-app.get('/login', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/login.html'));
 });
 
