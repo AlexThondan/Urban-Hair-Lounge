@@ -74,7 +74,7 @@ main {
 }
 
 #home {
-    background: url('img/Main finalized.png') no-repeat center center fixed;
+    background: url('../img/Main\ finalized.png') no-repeat center center fixed;
     height: 100vh;
     position: relative;
     width: 100%;

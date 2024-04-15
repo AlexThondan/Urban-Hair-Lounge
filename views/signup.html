@@ -5,27 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sign Up</title>
 <link rel="stylesheet" type="text/css" href="/css/signup.css">
-<script>
-  function validateForm() {
-    var username = document.getElementById("username").value;
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-
-    if (email.includes("@") && email.endsWith(".com") && username !== "" && password !== "") {
-      
-      window.location.href = "login.html";
-    } else {
-      
-      alert("Please fill in all fields and provide a valid email address ending with '.com'.");
-    }
-  }
-</script>
 </head>
 <body>
 
 <div class="signup-container">
   <h2>Sign Up</h2>
-  <form action="#" method="post" onsubmit="event.preventDefault(); validateForm();">
+  <form id="signupForm" action="/user/signup" method="post">
     <div class="input-group">
       <label for="username">User name</label>
       <input type="text" id="username" name="username" required>
@@ -38,11 +23,33 @@
       <label for="password">Password</label>
       <input type="password" id="password" name="password" required>
     </div>
-    <button type="submit" id = "submit">Register</button>
+    <button type="submit" id="submit">Register</button>
   </form>
   <p>Already have an account? <a href="/login">Log in</a></p>
   <a href="/index" class="back-button">&#8592;</a>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#signupForm').submit(function(event) {
+      event.preventDefault();
+      $.ajax({
+        type: 'POST',
+        url: '/user/signup',
+        data: $(this).serialize(),
+        success: function(response) {
+          alert(response);
+          window.location.href = "/login";
+        },
+        error: function(xhr, status, error) {
+          console.error(xhr.responseText);
+          alert('An error occurred while processing your request.');
+        }
+      });
+    });
+  });
+</script>
 
 </body>
 </html>

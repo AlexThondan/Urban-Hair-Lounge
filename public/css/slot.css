@@ -12,7 +12,7 @@ body {
 .container {
     width: 98%;
     height: 96vh;
-    background-image: url('img/adam-winger-KVVjmb3IIL8-unsplash.jpg');
+    background-image: url('../img/adam-winger-KVVjmb3IIL8-unsplash.jpg');
     background-size: cover;
     background-position: center;
     padding: 13px;

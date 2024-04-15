@@ -40,6 +40,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 const loginRoute = require('./route/login')(db);
 app.use('/user', loginRoute);
 
+const signupRoute = require('./route/signup')(db);
+app.use('/user/signup', signupRoute);
+
 // Serve the login page
 app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/login.html'));
