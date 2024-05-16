@@ -10,6 +10,7 @@
     <div class="container">
         <div class="book-container">
         <h2 class="booking-heading">Book a Slot</h2>
+<<<<<<< HEAD
             <form id="bookingForm">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -29,6 +30,26 @@
                 <button type="submit">Book Slot</button>
             </form>
         </div>
+=======
+        <form id="bookingForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)" required>
+            
+            <label for="date">Date:</label>
+            <input type="text" id="date" name="date" required>
+            
+            <label for="time">Time (See The Timings Below):</label>
+            <input type="text" id="time" name="time" required>
+            
+            <button type="submit">Book Slot</button>
+        </form>
+>>>>>>> 4296e939f5d751537315ae815df30c17315f148e
     </div>
     
     </div>
@@ -126,6 +147,6 @@
         }
     </script>
     
-    <a href="/index" class="back-button">&#8592;</a>
+    <a href="/feed" class="back-button">&#8592;</a>
 </body>
 </html>
