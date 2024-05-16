@@ -20,10 +20,10 @@
             <input type="tel" id="phone" name="phone" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)" required>
             
             <label for="date">Date:</label>
-            <input type="date" id="date" name="date" required>
+            <input type="text" id="date" name="date" required>
             
             <label for="time">Time (See The Timings Below):</label>
-            <input type="time" id="time" name="time" required>
+            <input type="text" id="time" name="time" required>
             
             <button type="submit">Book Slot</button>
         </form>
@@ -89,6 +89,6 @@
         }
     </script>
     
-    <a href="/index" class="back-button">&#8592;</a>
+    <a href="/feed" class="back-button">&#8592;</a>
 </body>
 </html>
