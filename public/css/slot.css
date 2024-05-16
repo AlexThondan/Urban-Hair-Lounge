@@ -22,6 +22,14 @@ body {
     align-items: center;
 }
 
+.book-container {
+    width: 20rem;
+    height: auto;
+    margin-bottom: 2rem;
+    background-color: #00000036;
+}
+
+
 h2 {
     text-align: center;
     margin-bottom: 30px;

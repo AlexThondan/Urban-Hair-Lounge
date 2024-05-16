@@ -1,6 +1,6 @@
 body {
     font-family: "Baskerville", serif;
-    background-color: #f7f7f7;
+    background-color: #c2000038;
     background-image: url('/public/img/allef-vinicius-IvQeAVeJULw-unsplash.jpg');
     background-size: cover;
     background-position: center;
@@ -17,6 +17,7 @@ body {
     padding: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    background-color: #00000030;
 }
 
 h2 {

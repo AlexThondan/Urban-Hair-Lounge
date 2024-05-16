@@ -66,6 +66,9 @@ app.get('/slot', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/Slot.html'));
 });
 
+app.get('/feedback', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/feed.html'));
+});
 
 
 // Serve the signup page

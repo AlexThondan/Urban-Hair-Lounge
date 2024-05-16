@@ -8,25 +8,27 @@
 </head>
 <body>
     <div class="container">
+        <div class="book-container">
         <h2 class="booking-heading">Book a Slot</h2>
-        <form id="bookingForm">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)" required>
-            
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date" required>
-            
-            <label for="time">Time (See The Timings Below):</label>
-            <input type="time" id="time" name="time" required>
-            
-            <button type="submit">Book Slot</button>
-        </form>
+            <form id="bookingForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)" required>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Time (See The Timings Below):</label>
+                <input type="time" id="time" name="time" required>
+                
+                <button type="submit">Book Slot</button>
+            </form>
+        </div>
     </div>
     
     </div>
@@ -55,14 +57,49 @@
     </div>
     
     <div class="overlay" id="overlay"></div>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         document.getElementById("bookingForm").addEventListener("submit", function (event) {
             event.preventDefault();
+            bookslot();
             showPopup();
             displayFormDetails();
         });
     
+        function bookslot() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var date = document.getElementById('date').value;
+            var time = document.getElementById('time').value;
+            console.log(name,email,phone,date,time);
+            $.ajax({
+                url: '/user/bookslot',
+                type: 'POST',
+                data: {
+                    'email': email,
+                    'name': name,
+                    'phone': phone,
+                    'date': date,
+                    'time': time,
+                },
+                success: function(response) {
+                    if(response.loginSuccess) {
+                        alert('Slot booked successful!');
+                        // window.location.href = '/index'; // Redirect to the next page on success
+                    } else {
+                        alert(response.message); // Show message on failure
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error(xhr.responseText); // Log any errors to the console
+                    alert('An error occurred while logging in. Please try again later.');
+                }
+            });
+        }
+
+
+
         function showPopup() {
             document.getElementById("bookingPopup").style.display = "block";
             document.getElementById("overlay").style.display = "block";
@@ -71,7 +108,7 @@
         function closePopup() {
             document.getElementById("bookingPopup").style.display = "none";
             document.getElementById("overlay").style.display = "none";
-            window.location.href = "/index";
+            window.location.href = "/feedback";
         }
     
         function displayFormDetails() {

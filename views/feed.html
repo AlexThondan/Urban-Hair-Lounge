@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Form</title>
-    <link rel="stylesheet" href="/public/css/feed.css">
+    <link rel="stylesheet" href="/css/feed.css">
 </head>
 <body>
     <div class="container">
@@ -28,13 +28,14 @@
         $(document).ready(function() {
             $('#feedbackForm').submit(function(event) {
                 event.preventDefault();
+                var formData = $(this).serialize();
                 $.ajax({
                     type: 'POST',
                     url: '/user/submit_feedback',
-                    data: $(this).serialize(),
+                    data: formData,
                     success: function(response) {
                         alert(response);
-                        window.location.href = "/";
+                        window.location.href = "/index";
                     },
                     error: function(xhr, status, error) {
                         console.error(xhr.responseText);

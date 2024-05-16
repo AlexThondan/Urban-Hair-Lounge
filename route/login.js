@@ -36,6 +36,38 @@ module.exports = function(db) {
         }
     });
 
+
+    router.post('/bookslot', async (req, res) => {
+        const { email, name , phone , date , time } = req.body;
+        console.log(email, name , phone , date , time );
+
+        try {
+            await db.query("INSERT INTO slot (name, email, phone , date , time) VALUES (?, ?, ? ,? ,?)", [name , email , phone , date , time]);
+            res.status(200);
+        } catch (error) {
+            console.error("Error:", error);
+            res.status(500).send('Internal server error'); 
+        }
+    });
+
+
+    router.post('/submit_feedback', async (req, res) => {
+        const { name, email, feedback } = req.body;
+    
+        const query = 'INSERT INTO feedback (name, email, feedback) VALUES (?, ?, ?)';
+        db.query(query, [name, email, feedback], (err, result) => {
+            if (err) {
+                console.error(err);
+                res.status(500).send('Server error');
+            } else {
+                res.send('Feedback submitted successfully');
+            }
+        });
+    });
+
+
+
+    
   
     return router;
 };
