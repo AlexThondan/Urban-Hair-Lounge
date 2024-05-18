@@ -43,13 +43,13 @@ function validateLoginForm() {
         success: function(response) {
             if(response.loginSuccess) {
                 alert('Login successful!');
-                window.location.href = '/index'; // Redirect to the next page on success
+                window.location.href = '/index'; s
             } else {
-                alert(response.message); // Show message on failure
+                alert(response.message); 
             }
         },
         error: function(xhr, status, error) {
-            console.error(xhr.responseText); // Log any errors to the console
+            console.error(xhr.responseText); 
             alert('An error occurred while logging in. Please try again later.');
         }
     });
@@ -57,7 +57,7 @@ function validateLoginForm() {
 
 // Add event listener to form submission
 document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault(); 
     validateLoginForm(); // Call the function to handle form submission
 });
 </script>
